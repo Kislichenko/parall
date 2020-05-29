@@ -192,7 +192,7 @@ map<string, int> countWordsByBlocksOMP(const char* text, int number) {
 
     //для каждого блока производим подсчет результатов
     //после подсчета результаты объединяем в одну переменную
-    #pragma omp parallel for
+    #pragma omp parallel for num_threads(threadNum)
     for (int i = 0; i < number; i++) {
         blockStart = indexes[i];
         blockEnd = i == (number - 1) ? len : indexes[i + 1];
