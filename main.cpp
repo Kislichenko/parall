@@ -102,7 +102,7 @@ double countWithKoefOMP(const char* text, int threadNumber){
     
     //cout << "\nСреднее значение: " << mean << endl;
     //cout << "Стандартное отклонение: " << standardDeviation << endl;
-    //cout << "погрешность: " << marginError << endl;
+    //cout << "Доверительный интервал: " << margin << endl;
     
     return mean;
 }
@@ -153,7 +153,7 @@ double countWithKoefSimple(const char* text, int threadNumber){
     
    //cout << "\nСреднее значение: " << mean << endl;
    //cout << "Стандартное отклонение: " << standardDeviation << endl;
-   //cout << "Погрешность: " << margin << endl;
+   //cout << "Доверительный интервал: " << margin << endl;
     
     return mean;
 }
